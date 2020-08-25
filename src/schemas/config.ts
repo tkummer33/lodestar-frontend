@@ -20,7 +20,7 @@ export abstract class Config {
   public static fromFake(): Config {
     return {
       baseUrl: 'http://localhost:3000',
-      clientId: 'lodestar',
+      clientId: 'open-management-portal',
       authBaseUrl:
         'https://sso.example.com/auth/realms/lodestar/protocol/openid-connect',
       backendUrl: 'https://lodestar-backend.example.com',
