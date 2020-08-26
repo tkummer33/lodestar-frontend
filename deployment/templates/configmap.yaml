@@ -4,7 +4,7 @@ kind: ConfigMap
 metadata:
   name: frontend-config
 data:
-  config.json: |
+  frontend-config.json: |
     {
       "baseUrl": "{{ .Values.baseUrl }}",
       "clientId": "{{ .Values.clientId }}",
