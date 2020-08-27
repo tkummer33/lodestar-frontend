@@ -7,14 +7,14 @@ on:
 
 jobs:
   check-links:
-    if: github.repository == 'rht-labs/lodestar-frontend'
+    if: github.repository == 'tkummer33/lodestar-frontend'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
   #     - uses: gaurav-nelson/github-action-markdown-link-check@0.4.0
   # TODO: This fails because we have a localhost link in the README. Consider removing or otherwise ignoring.
   linting:
-    if: github.repository == 'rht-labs/lodestar-frontend'
+    if: github.repository == 'tkummer33/lodestar-frontend'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -44,7 +44,7 @@ jobs:
           name: coverage
           path: coverage/
   build:
-    if: github.repository == 'rht-labs/lodestar-frontend'
+    if: github.repository == 'tkummer33/lodestar-frontend'
 
     runs-on: ubuntu-latest
 
